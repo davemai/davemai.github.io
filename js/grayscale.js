@@ -47,7 +47,7 @@ function init() {
         zoom: 15,
 
         // The latitude and longitude to center the map (always required)
-        center: new google.maps.LatLng(39.9526, 75.1652), // Philadelphia
+        center: new google.maps.LatLng(39.9522, 75.1932), // Philadelphia
 
         // Disables the default Google Maps UI components
         disableDefaultUI: true,
