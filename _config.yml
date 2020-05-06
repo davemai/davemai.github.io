@@ -23,6 +23,8 @@ social:
     url: https://www.facebook.com/damailperson
   - title: github
     url: https://github.com/davemai
+  - title: linkedin
+    url: https://www.linkedin.com/in/dave-mai
 
 # Build settings
 markdown: kramdown
