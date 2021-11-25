@@ -152,11 +152,12 @@ a:focus {
 }
 
 .intro .intro-body .brand-heading {
-    font-size: 30px;
+    font-size: 40px;
+/*     font-size: 30px;
     white-space: nowrap;
     margin-left: -100%;
     margin-right: -100%;
-    text-align: center;
+    text-align: center; */
 }
 
 .intro .intro-body .intro-text {
