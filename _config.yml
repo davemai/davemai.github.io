@@ -17,16 +17,12 @@ footer:
 
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
 social:
-  - title: bsky
-    url: https://bsky.app/profile/davemai.bsky.social
   - title: twitter
     url: https://twitter.com/lococyte
-  - title: facebook
-    url: https://www.facebook.com/daveymai
-  - title: github
-    url: https://github.com/davemai
   - title: linkedin
     url: https://www.linkedin.com/in/davemai
+  - title: instagram
+    url: https://www.instagram.com/dmai.makes/
 
 # Build settings
 markdown: kramdown
