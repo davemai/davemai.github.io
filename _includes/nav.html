@@ -5,8 +5,8 @@
             <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
                 <ul class="nav navbar-nav">
                     <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
-                    <li class="hidden">
-                        {% if page.url == "/" %}<a href="#page-top"></a>{% else %}<a href="/#page-top"></a>{% endif %}
+                    <li>
+                        <a href="/">&#9675;</a>
                     </li>
                     <li>
                         {% if page.url == "/" %}<a class="page-scroll" href="#about">about</a>{% else %}<a href="/#about">about</a>{% endif %}
