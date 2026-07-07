@@ -6,10 +6,10 @@
                 <ul class="nav navbar-nav">
                     <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
                     <li class="hidden">
-                        <a href="/#page-top"></a>
+                        {% if page.url == "/" %}<a href="#page-top"></a>{% else %}<a href="/#page-top"></a>{% endif %}
                     </li>
                     <li>
-                        <a href="/#about">about</a>
+                        {% if page.url == "/" %}<a class="page-scroll" href="#about">about</a>{% else %}<a href="/#about">about</a>{% endif %}
                     </li>
                     <li>
                         <a href="https://davemai.substack.com/">thoughts</a>
@@ -18,7 +18,7 @@
                         <a href="/creations/">creations</a>
                     </li>
                     <li>
-                        <a href="/#contact">contact</a>
+                        {% if page.url == "/" %}<a class="page-scroll" href="#contact">contact</a>{% else %}<a href="/#contact">contact</a>{% endif %}
                     </li>
                 </ul>
             </div>
