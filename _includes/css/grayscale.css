@@ -4,50 +4,10 @@
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
 
-@font-face {
-    font-family: 'Anodina';
-    src: url('/fonts/Anodina-ExtraLight.woff2') format('woff2');
-    font-weight: 200;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Anodina';
-    src: url('/fonts/Anodina-Light.woff2') format('woff2');
-    font-weight: 300;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Anodina';
-    src: url('/fonts/Anodina-Regular.woff2') format('woff2');
-    font-weight: 400;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Anodina';
-    src: url('/fonts/Anodina-Bold.woff2') format('woff2');
-    font-weight: 700;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Anodina';
-    src: url('/fonts/Anodina-ExtraBold.woff2') format('woff2');
-    font-weight: 800;
-    font-style: normal;
-    font-display: swap;
-}
-
 body {
     width: 100%;
     height: 100%;
-    font-family: Anodina,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: "VCR OSD Mono",monospace;
     color: #fff;
     background-color: {{ site.color.primary-dark }};
 }
@@ -64,7 +24,7 @@ h4,
 h5,
 h6 {
     margin: 0 0 40px;
-    font-family: Anodina,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: "VCR OSD Mono",monospace;
     font-weight: 700;
     letter-spacing: 1px;
 }
@@ -103,7 +63,7 @@ a:focus {
 .navbar-custom {
     margin-bottom: 0;
     border-bottom: 1px solid rgba(255,255,255,.3);
-    font-family: Anodina,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: "VCR OSD Mono",monospace;
     background-color: {{ site.color.primary-dark }};
 }
 
@@ -334,7 +294,7 @@ a:focus {
 }
 
 .btn {
-    font-family: Anodina,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: "VCR OSD Mono",monospace;
     font-weight: 400;
     -webkit-transition: all .3s ease-in-out;
     -moz-transition: all .3s ease-in-out;
