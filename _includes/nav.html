@@ -6,7 +6,7 @@
                 <ul class="nav navbar-nav">
                     <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
                     <li>
-                        <a href="/">&#9675;</a>
+                        {% if page.url == "/" %}<a class="page-scroll" href="#page-top">&#9675;</a>{% else %}<a href="/">&#9675;</a>{% endif %}
                     </li>
                     <li>
                         {% if page.url == "/" %}<a class="page-scroll" href="#about">about</a>{% else %}<a href="/#about">about</a>{% endif %}
