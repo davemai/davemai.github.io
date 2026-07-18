@@ -442,6 +442,12 @@ body {
     grid-template-columns: repeat(3, 1fr);
     gap: 15px;
     margin-top: 30px;
+    max-width: 100%;
+}
+
+.photo-grid-item {
+    overflow: hidden;
+    aspect-ratio: 1;
 }
 
 .photo-grid-item img {
@@ -449,4 +455,17 @@ body {
     height: 100%;
     object-fit: cover;
     border-radius: 4px;
+    display: block;
+}
+
+@media(max-width:767px) {
+    .photo-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media(max-width:480px) {
+    .photo-grid {
+        grid-template-columns: 1fr;
+    }
 }
