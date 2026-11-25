@@ -28,6 +28,16 @@ social:
   - title: github
     url: https://github.com/davemai
 
+# Shop: each product is a file in _products/ and gets its own page at /shop/<name>/
+collections:
+  products:
+    output: true
+    permalink: /shop/:name/
+
+# Shop settings
+shop:
+  currency: USD
+
 # Build settings
 markdown: kramdown
 permalink: pretty

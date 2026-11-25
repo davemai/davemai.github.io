@@ -1,0 +1,15 @@
+{% comment %}
+    All purchase logic lives here. To turn on checkout, set `buy_url` on a
+    product (e.g. a Stripe Payment Link). To switch to a cart provider
+    (Snipcart, Shopify Buy Button, etc.), replace the link below.
+{% endcomment %}
+{% assign product = include.product %}
+<div class="product-buy">
+    {% if product.sold_out %}
+    <span class="btn btn-default disabled">sold out</span>
+    {% elsif product.buy_url %}
+    <a class="btn btn-default" href="{{ product.buy_url }}">buy</a>
+    {% else %}
+    <span class="btn btn-default disabled">coming soon</span>
+    {% endif %}
+</div>

@@ -1,0 +1,24 @@
+---
+layout: subpage
+title: shop
+---
+
+<h2>shop</h2>
+{% assign products = site.products | sort: "order" %}
+{% if products.size > 0 %}
+<div class="product-grid">
+    {% for product in products %}
+    <div class="product-card">
+        <a href="{{ product.url | prepend: site.baseurl }}">
+            <div class="product-card-image">
+                <img src="{{ product.image | prepend: site.baseurl }}" alt="{{ product.title }}">
+            </div>
+            <h4>{{ product.title }}</h4>
+        </a>
+        {% include product-price.html product=product %}
+    </div>
+    {% endfor %}
+</div>
+{% else %}
+<p>nothing for sale yet. check back soon.</p>
+{% endif %}

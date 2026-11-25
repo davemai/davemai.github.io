@@ -1,0 +1,16 @@
+---
+layout: subpage
+---
+
+<p class="product-back"><a href="{{ "/shop/" | prepend: site.baseurl }}">&larr; shop</a></p>
+<div class="product-detail">
+    <div class="product-detail-image">
+        <img src="{{ page.image | prepend: site.baseurl }}" alt="{{ page.title }}">
+    </div>
+    <div class="product-detail-info">
+        <h2>{{ page.title }}</h2>
+        {% include product-price.html product=page %}
+        {{ content }}
+        {% include buy-button.html product=page %}
+    </div>
+</div>
