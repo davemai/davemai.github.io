@@ -36,7 +36,6 @@ collections:
 
 # Shop settings
 shop:
-  name: sieve forms   # appended to product page titles
   currency: USD
 
 # Build settings
